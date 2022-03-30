@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
     {
         PlayerMoveKeyboard();
         AnimatePlayer();
-
+        PlayerJump();
 
 
     }
@@ -80,7 +80,16 @@ public class Player : MonoBehaviour
 
        }
     
-    
+       void PlayerJump() {
+
+           if (Input.GetButtonDown("Jump")){
+               
+
+
+
+
+           }
+       }
     
     
     
