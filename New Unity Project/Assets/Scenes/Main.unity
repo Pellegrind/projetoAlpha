@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3165,7 +3165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227807457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7, y: 4.49, z: 0.9170966}
+  m_LocalPosition: {x: -3.78, y: 4.56, z: 0.9170966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 161314774}
@@ -6630,25 +6630,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4717649307515672001, guid: fa430ed844888ad44810c13abe4e1743, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.02
-      objectReference: {fileID: 0}
     - target: {fileID: 4717649307515672029, guid: fa430ed844888ad44810c13abe4e1743, type: 3}
       propertyPath: m_Name
       value: Players_0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4717649307515672030, guid: fa430ed844888ad44810c13abe4e1743, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4717649307515672030, guid: fa430ed844888ad44810c13abe4e1743, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4717649307515672030, guid: fa430ed844888ad44810c13abe4e1743, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 257197679
       objectReference: {fileID: 0}
     - target: {fileID: 4717649307515672031, guid: fa430ed844888ad44810c13abe4e1743, type: 3}
       propertyPath: m_RootOrder
