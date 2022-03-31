@@ -35,22 +35,27 @@ public class Player : MonoBehaviour
 
 
 
-
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         PlayerMoveKeyboard();
         AnimatePlayer();
-        PlayerJump();
+    
 
 
     }
+
+     void FixedUpdate(){
+
+         PlayerJump();
+
+
+}
+
 
     void PlayerMoveKeyboard()
     {
@@ -83,6 +88,8 @@ public class Player : MonoBehaviour
        void PlayerJump() {
 
            if (Input.GetButtonDown("Jump")){
+               myBody.AddForce(new Vector2(0f,jumpForce), ForceMode2D.Impulse);
+
                
 
 
