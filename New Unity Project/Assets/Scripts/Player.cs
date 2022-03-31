@@ -27,23 +27,22 @@ public class Player : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
     }
 
-    // Update is called once per frame
     void Update()
     {
         PlayerMoveKeyboard();
         AnimatePlayer();
+
     }
 
     void FixedUpdate()
     {
         PlayerJump();
     }
-
+    
     void PlayerMoveKeyboard()
     {
         movementX = Input.GetAxisRaw("Horizontal");
@@ -51,6 +50,7 @@ public class Player : MonoBehaviour
         transform.position +=
             new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
     }
+
 
     void AnimatePlayer()
     {
@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
         {
             anim.SetBool(Walk_Animation, false);
         }
-    }
+     }
 
     void PlayerJump()
     {
