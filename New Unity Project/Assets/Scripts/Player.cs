@@ -45,14 +45,14 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         PlayerJump();
+      
     }
     
     void PlayerMoveKeyboard()
     {
         movementX = Input.GetAxisRaw("Horizontal");
 
-        transform.position +=
-            new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
+        transform.position +=  new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
     }
 
 
@@ -76,11 +76,13 @@ public class Player : MonoBehaviour
 
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump")&&isGrounded)
+        if (Input.GetButton("Jump")&&isGrounded)
         {
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            
         }
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
