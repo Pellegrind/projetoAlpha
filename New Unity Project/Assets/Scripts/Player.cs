@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     private string Walk_Animation = "Walk";
 
     private SpriteRenderer sr;
+    
+    private bool isGrounded;
+
+    private string GROUND_TAG = "Ground";
 
     private void Awake()
     {
@@ -72,9 +76,16 @@ public class Player : MonoBehaviour
 
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump")&&isGrounded)
         {
+            isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Ground"));
+            isGrounded = true;
     }
 }
